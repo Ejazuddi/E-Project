@@ -10,6 +10,18 @@
 
 
 </head>
+<?php
+
+session_start();
+if(!$_SESSION['admin']){
+header("location:form/login.php");
+}
+
+
+?>
+
+
+
 <body>
 <nav class="navbar navbar-light bg-dark">
   <div class="container-fluid text-white">
@@ -17,9 +29,10 @@
     <span>
 
     <i class="fas fa-user-shield"></i>
-    Hello,  |
+    Hello, <?php echo $_SESSION['admin'];?>
     <i class="fas fa-sign-out-alt"></i>
-    <a href="" class= "text-decoration-none text-white">logout</a>  |
+    <a href= "form/logout.php
+    " class= "text-decoration-none text-white">logout</a>  |
     <a href="" class= "text-decoration-none text-white ">userpanal</a>  | 
     
     </span>

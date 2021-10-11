@@ -46,11 +46,63 @@
 
 </div>
     <Button name="submit" class="bg-danger fs-4 fw-bold my-3 form-control text-white">Upload</Button>
-        </form>
+</form>
 
         </div>
         </div>
         </div>
 
+
+        <!-- fetec data  -->
+<div class="container">
+
+<div class="row">
+
+<div class="col-md-8 m-auto">
+
+
+
+
+<table class="table border border-warning table-hover bold my-5
+">
+<tbody>
+<thead class="bg-dark text-white fs-5 font-monospace text-center"> 
+<th>Id</th>
+<th>name</th>
+<th>Price</th>
+<th>Image</th>
+<th>category</th>
+</thead>
+
+
+
+
+
+<?php
+
+include 'config.php';
+$record = mysqli_query($con,"SELECT * FROM `tblproduct`");
+
+while($row=mysqli_fetch_array($record)){
+echo "
+<tr>
+<td>$row[Id]</td>
+<td>$row[Pname]</td>
+<td>$row[Pprice]</td>
+<td><img src='Uploadimages/3.jpg' height='90px' width='200px'></td>
+<td>$row[PCategory]</td>
+<td></td>
+</tr>
+";
+};
+?>
+</tbody>
+
+
+
+</table>
+</div>
+</div>
+</div>
 </body>
 </html>
