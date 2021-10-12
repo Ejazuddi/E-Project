@@ -72,6 +72,7 @@
 <th>Price</th>
 <th>Image</th>
 <th>category</th>
+<th>Delete</th>
 </thead>
 
 
@@ -91,6 +92,7 @@ echo "
 <td>$row[Pprice]</td>
 <td><img src='Uploadimages/3.jpg' height='90px' width='200px'></td>
 <td>$row[PCategory]</td>
+<td><a href=''class='btn btn-danger' >Home</a></td>
 <td></td>
 </tr>
 ";
