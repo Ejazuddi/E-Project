@@ -87,12 +87,12 @@ $record = mysqli_query($con,"SELECT * FROM `tblproduct`");
 while($row=mysqli_fetch_array($record)){
 echo "
 <tr>
-<td>$row[Id]</td>
+<td>$row[ID]</td>
 <td>$row[Pname]</td>
 <td>$row[Pprice]</td>
-<td><img src='Uploadimages/3.jpg' height='90px' width='200px'></td>
+<td><img src='$row[Pimage]' height='90px' width='200px'></td>
 <td>$row[PCategory]</td>
-<td><a href=''class='btn btn-danger' >Home</a></td>
+<td><a href=''class='btn btn-danger' >DELETE</a></td>
 <td></td>
 </tr>
 ";

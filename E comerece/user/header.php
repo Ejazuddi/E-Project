@@ -17,14 +17,14 @@
 
     <div class="d-flex">
 
-    <a href=""class="text-warning text-decoration-none pe-2"><i class="fas fa-home"></i>  Home</a>
+    <a href="index.php"class="text-warning text-decoration-none pe-2"><i class="fas fa-home"></i>  Home</a>
     <a href=""class="text-warning text-decoration-none pe-2"><i class="fas fa-shopping-cart"></i> Cart(0) |</a>
 
     <span class="text-warning pe-2" >
        
     <i class="fas fa-users"></i>Hello, |
     <a href=""class="text-warning text-decoration-none pe-2"><i class="fas fa-sign-in-alt"></i>Login</a> |
-    <a href=""class="text-warning text-decoration-none pe-2" >admin</a>
+    <a href="../admin/mystore.php"class="text-warning text-decoration-none pe-2" >admin</a>
 
     </span>
 
@@ -35,11 +35,11 @@
   
 </nav>
 </div>
-<div class="bg-danger">
-  <ul class="list-unstyled">
-    <li><a href=""class="text-decoration-none text-white fs-4 px-5">LAPTOPS</a></li>
-    <li><a href=""class="text-decoration-none text-white fs-4 px-5">Mobile</a></li>
-    <li><a href=""class="text-decoration-none text-white fs-4 px-5">BAG</a></li>
+<div class="bg-danger font-monospace">
+  <ul class="list-unstyled d-flex justify-content-center">
+    <li><a href="Laptop.php"class="text-decoration-none text-white fw-bold fs-4 px-5">LAPTOPS</a></li>
+    <li><a href="Mobile.php"class="text-decoration-none text-white  fw-bold fs-4 px-5">Mobile</a></li>
+    <li><a href="Bag.php"class="text-decoration-none text-white fw-bold fs-4 px-5">BAG</a></li>
 
   </ul>
 </div>
