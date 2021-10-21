@@ -25,7 +25,8 @@
  $record = mysqli_query($con, "Select * from tblproduct");
  while (  $row=mysqli_fetch_array($record)){
   $check_page = $row['PCategory'];
-  if($check_page==='Home'){
+  if($check_page==='Home')
+  {
   echo "  
  
   <div class='col-md-6 col-lg-4 m-auto mb-3 '>
