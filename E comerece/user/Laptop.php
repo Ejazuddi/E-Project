@@ -23,16 +23,17 @@
 <?php
  include 'config.php';
  $record = mysqli_query($con, "Select * from tblproduct");
- while (  $row=mysqli_fetch_array($record)){
+ while ($row=mysqli_fetch_array($record)){
   $check_page = $row['PCategory'];
-  if($check_page==='LAPTOP'){
+  
+  if($check_page==='laptop'){
+  $a = str_ireplace('Uploadimage/','',$row['Pimage']);
   echo "  
- 
   <div class='col-md-6 col-lg-4 m-auto mb-3 '>
 <div class='card m-auto' style='width: 18rem;'>
   <img src='../admin/product/$row[Pimage]' class='card-img-top' alt=''>
   <div class='card-body text-center'>
-    <h5 class='card-title text-danger fs-4 fw-bold'>$row[Pimage]</h5>
+    <h5 class='card-title text-danger fs-4 fw-bold'>$a</h5>
     <h5 class='card-title'>$row[Pname]</h5>
     <p class='card-text text-danger fs-4 fw-bold'>RS: $row[Pprice]</p>
     <input type='number' value = 'min= '1' max ='20'placeholder ='Quantity'><br><br>

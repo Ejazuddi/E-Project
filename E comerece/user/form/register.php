@@ -12,30 +12,35 @@
         <div class="row">
          <div class="col-md-6 m-auto mt-5 bg-white shadow font-monospace border border-info">
 
-         <p class="text-warning text-center fs-3 fw-bold my-3">User Register</p>
-          <form action="">
-              <div class="md-3">
+         <p class="text-warning text-center fs-3 fw-bold md-3">User Register</p>
+          <form action="insert.php" method="POST">
+              <div class="w-100 bg-priamry fs-4 ">
                <label for="">UserName</label>
                <br>
-               <input type="text" placeholder="Enter User name" class="form control">
-              </div>
+               <input type="text" style="width: 100%;"  placeholder="Enter User name" class="form control" name="username">
+              
 
-              <div class="md-3">
+              <div class="w-100 bg-priamry fs-4 ">
                <label for="">UserEmail</label>
-               <input type="email" placeholder="Enter User Email" class="form control">
+               
+<br>
+               <input type="email" style="width: 100%;"  placeholder="Enter User Email" class="form control" name="email">
                <br>
               </div>
-              <div class="md-3">
+              <div  class="md-3">
                <label for="">UserNumber</label>
-               <input type="number" placeholder="Enter User Number" class="form control">
+               <br>
+               <input style="width: 100%;" type="number" placeholder="Enter User Number" class="form control" name="number">
               </div>
               <div class="md-3">
                <label for="">UserPassword</label>
-               
-               <input type="password" placeholder="Enter User password" class="form control">
+               <br>
+               <input type="password" style="width: 100%;"  placeholder="Enter User password" class="form control" name="password">
               </div>
+              <br>
               <div class="mb-3">
-              <button class="w-100 bg-priamry fs-4 text-warning">Register</button>
+              <input type="submit" value="register" name="submit" class="w-100 bg-priamry fs-4 text-warning">
+             
               </div>
 
           </form>

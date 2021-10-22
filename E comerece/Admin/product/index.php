@@ -30,7 +30,7 @@
 
 <div class="mb-3">
   <label  class="form-label">Add product Image:</label>
-  <input type="file"name="Pimage" class="form-control" >
+  <input type="file" name="Pimage" class="form-control" >
 
 </div>
 <div class="mb-3">
@@ -85,7 +85,8 @@ include 'config.php';
 $record = mysqli_query($con,"SELECT * FROM `tblproduct`");
 
 while($row=mysqli_fetch_array($record)){
-echo "
+
+  echo "
 <tr>
 <td>$row[ID]</td>
 <td>$row[Pname]</td>
